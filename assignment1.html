@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	theme: "light1", // "light2", "dark1", "dark2"
+	animationEnabled: true, // change to true		
+	title:{
+		text: "Graph to show the performence of currencies over a period of time"
+	},
+	data: [
+	{
+		// Change type to "bar", "area", "spline", "pie",etc.
+		type: "area",
+		dataPoints: [
+			{ label: "CAD",  y: 1.4996  },
+			{ label: "HKD", y: 8.9623  },
+			{ label: "ISK", y: 137.0  },
+			{ label: "PHP",  y: 59.743  },
+			{ label: "DKK",  y: 7.465  },
+			{ label: "HUF",  y: 317.41  },
+			{ label: "CZK",  y: 25.697  },
+			{ label: "AUD",  y: 1.5771  },
+			{ label: "RON",  y: 4.7455  },
+			{ label: "SEK",  y: 10.3998  },
+			{ label: "IDR",  y: 15964.21  },
+			{ label: "HUF",  y: 317.41  },
+		    { label: "INR", y: 81.8395},
+			{ label: "BRL", y: 4.1942},
+			{ label: "RUB", y: 74.8209},
+			{ label: "HRK", y: 7.412},
+        	{ label: "JPY", y: 125.59},
+			{ label: "THB", y: 35.725},
+			{ label: "CHF", y: 1.1436},
+			{ label: "SGD", y: 1.5445},
+			{ label: "BGN", y:1.9558},
+			{ label: "TRY", y: 5.9444},
+			{ label: "CNY", y: 7.6938},
+			{ label: "NOK", y: 9.6783},
+			{ label: "NZD", y: 1.6556},
+			{ label: "ZAR", y: 15.2773},
+			{ label: "USD", y:1.1423},
+			{ label: "MXN", y: 21.7407},
+			{ label: "ILS", y: 4.1251},
+			{ label: "GBP", y: 0.87803},
+			{ label: "KRW", y: 1276.75},
+            { label: "MYR", y: 4.6628},
+			
+			
+			{ label: "CAD",  y: 1.4893  },
+			{ label: "HKD", y: 8.8866  },
+			{ label: "ISK", y: 141.7 },
+			{ label: "PHP",  y: 58.335  },
+			{ label: "DKK",  y: 7.4636  },
+			{ label: "HUF",  y: 323.39  },
+			{ label: "CZK",  y: 25.447  },
+			{ label: "AUD",  y: 1.6244  },
+			{ label: "RON",  y: 4.7343  },
+			{ label: "SEK",  y: 10.5633  },
+			{ label: "IDR",  y: 16083.35  },
+			{ label: "HUF",  y: 78.524  },
+		    { label: "INR", y: 4.3511 },
+			{ label: "BRL", y: 10.5633 },
+			{ label: "RUB", y: 16083.35},
+			{ label: "HRK", y: 78.524},
+        	{ label: "JPY", y: 4.3511},
+			{ label: "THB", y: 71.5975},
+			{ label: "CHF", y: 7.3973},
+			{ label: "SGD", y: 122.6 },
+			{ label: "BGN", y: 34.897},
+			{ label: "TRY", y: 1.1105},
+			{ label: "CNY", y: 1.5395},
+			{ label: "NOK", y: 4.2496},
+			{ label: "NZD", y: 1.9598},
+			{ label: "ZAR", y: 16.1218},
+			{ label: "USD", y:1.138},
+			{ label: "MXN", y: 21.8201},
+			{ label: "ILS", y: 4.0607},
+			{ label: "GBP", y: 0.89655},
+			{ label: "KRW", y: 1315.35},
+            { label: "MYR", y: 4.7082},
+			
+			
+			
+			
+			{ label: "CAD",  y: 1.4633  },
+			{ label: "HKD", y: 8.7133  },
+			{ label: "ISK", y: 135.8},
+			{ label: "PHP",  y: 58.335  },
+			{ label: "DKK",  y: 56.784  },
+			{ label: "HUF",  y: 7.4697  },
+			{ label: "CZK",  y: 331.04  },
+			{ label: "AUD",  y: 25.433  },
+			{ label: "RON",  y: 1.5992  },
+			{ label: "SEK",  y: 4.7821  },
+			{ label: "IDR",  y: 10.44  },
+			{ label: "HUF",  y: 15565.65  },
+		    { label: "INR", y: 79.812 },
+			{ label: "BRL", y: 4.5128 },
+			{ label: "RUB", y: 69.2781},
+			{ label: "HRK", y: 7.4455},
+        	{ label: "JPY", y: 122.29},
+			{ label: "THB", y: 33.472},
+			{ label: "CHF", y: 1.0871},
+			{ label: "SGD", y: 1.5088},
+			{ label: "BGN", y: 4.2567},
+			{ label: "TRY", y: 1.9598},
+			{ label: "CNY", y: 6.6567},
+			{ label: "NOK", y: 7.8175},
+			{ label: "NZD", y: 9.846},
+			{ label: "ZAR", y: 1.6638},
+			{ label: "USD", y:15.7398},
+			{ label: "MXN", y: 1.1189},
+			{ label: "ILS", y: 15.7398},
+			{ label: "GBP", y: 1.1189},
+			{ label: "KRW", y: 21.085},
+            { label: "MYR", y: 3.8749},
+			
+			
+			{ label: "CAD",  y: 1.4633  },
+			{ label: "HKD", y: 8.7133  },
+			{ label: "ISK", y: 135.8},
+			{ label: "PHP",  y: 58.335  },
+			{ label: "DKK",  y: 56.784  },
+			{ label: "HUF",  y: 7.4697  },
+			{ label: "CZK",  y: 331.04  },
+			{ label: "AUD",  y: 25.433  },
+			{ label: "RON",  y: 1.5992  },
+			{ label: "SEK",  y: 4.7821  },
+			{ label: "IDR",  y: 15712.0  },
+			{ label: "HUF",  y: 75.65  },
+		    { label: "INR", y: 79.812 },
+			{ label: "BRL", y: 4.5128 },
+			{ label: "RUB", y: 69.2781},
+			{ label: "HRK", y: 7.4455},
+        	{ label: "JPY", y: 122.29},
+			{ label: "THB", y: 33.472},
+			{ label: "CHF", y: 1.0871},
+			{ label: "SGD", y: 1.5088},
+			{ label: "BGN", y: 4.2567},
+			{ label: "TRY", y: 1.9598},
+			{ label: "CNY", y: 6.6567},
+			{ label: "NOK", y: 7.8175},
+			{ label: "NZD", y: 9.846},
+			{ label: "ZAR", y: 1.6638},
+			{ label: "USD", y:15.7398},
+			{ label: "MXN", y: 1.1189},
+			{ label: "ILS", y: 15.7398},
+			{ label: "GBP", y: 1.1189},
+			{ label: "KRW", y: 1329.87},
+            { label: "MYR", y: 3.8749}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		]
+	}
+	]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="canvasjs.min.js"> </script>
+</body>
+</html>
